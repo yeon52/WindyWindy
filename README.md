@@ -1,7 +1,8 @@
 # WindyWindy 
 
-- 메인화면에서 사이트 별 현재 날씨 간략하게 제공
-- 각 사이트 화면 클릭 시 자세한 날씨 정보 제공
+- 현재 위치 기반 날씨 정보 제공
+- 메인화면에서 사이트 별 현재 날씨 한 눈에 간략하게 제공
+- 각 사이트 화면 클릭 시 사이트 별 자세한 날씨 정보 제공
 
   ![image](https://user-images.githubusercontent.com/52206971/103343256-035c5300-4acf-11eb-8eb7-86fccfa6950d.png)
   ![image](https://user-images.githubusercontent.com/52206971/103344553-453ac880-4ad2-11eb-9b99-0c2fb63fa275.png)
