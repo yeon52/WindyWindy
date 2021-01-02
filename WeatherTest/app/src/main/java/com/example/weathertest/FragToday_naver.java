@@ -131,10 +131,9 @@ public class FragToday_naver extends Fragment {
                 tv_wind_dir_now.setText("풍향 : " + winddir[0]);
                 tv_humidity_now.setText("습도 : " + humidity[0]);
                 tv_smog.setText("미세먼지 : "+dust.replace("㎍/㎥", "㎍/㎥, "));
-                int n = Integer.parseInt(timetoday[0].replace("시",""));
                 switch (weather[0]) {
                     case "맑음":
-                        if(n >= 6 && n<18)
+                        if(time_now >= 6 && time_now<18)
                             iv_weather_now.setImageResource(R.drawable.sun);
                         else
                             iv_weather_now.setImageResource(R.drawable.night);
@@ -143,13 +142,13 @@ public class FragToday_naver extends Fragment {
                         iv_weather_now.setImageResource(R.drawable.cloudy);
                         break;
                     case "구름조금":
-                        if (n >= 6 && n<18)
+                        if (time_now >= 6 && time_now<18)
                             iv_weather_now.setImageResource(R.drawable.cloud_little_day);
                         else
                             iv_weather_now.setImageResource(R.drawable.cloud_little_night);
                         break;
                     case "구름많음":
-                        if (n >= 6 && n<18)
+                        if (time_now >= 6 && time_now<18)
                             iv_weather_now.setImageResource(R.drawable.cloud_many_day);
                         else
                             iv_weather_now.setImageResource(R.drawable.cloud_many_night);
@@ -169,7 +168,7 @@ public class FragToday_naver extends Fragment {
                 tv_probrain_today1.setText(probrain[0]);
                 tv_time_today1.setText(timetoday[0]);
 
-                n = Integer.parseInt(timetoday[0].replace("시",""));
+                int n = Integer.parseInt(timetoday[0].replace("시",""));
                 switch (weather[0]) {
                     case "맑음":
                         if (n >= 6 && n<18)

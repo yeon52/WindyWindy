@@ -167,10 +167,9 @@ public class MainActivity extends AppCompatActivity {
                 tv_naver_time.setText(time_now+"시");
                 tv_naver_temp.setText(temp[0]);
                 tv_naver_weather.setText(weather[0]);
-                int n = Integer.parseInt(timetoday[0].replace("시",""));
                 switch (weather[0]) {
                     case "맑음":
-                        if(n >= 6 && n<18)
+                        if(time_now >= 6 && time_now<18)
                             iv_naver_weather.setImageResource(R.drawable.sun);
                         else
                             iv_naver_weather.setImageResource(R.drawable.night);
@@ -179,13 +178,13 @@ public class MainActivity extends AppCompatActivity {
                         iv_naver_weather.setImageResource(R.drawable.cloudy);
                         break;
                     case "구름조금":
-                        if (n >= 6 && n<18)
+                        if (time_now >= 6 && time_now<18)
                             iv_naver_weather.setImageResource(R.drawable.cloud_little_day);
                         else
                             iv_naver_weather.setImageResource(R.drawable.cloud_little_night);
                         break;
                     case "구름많음":
-                        if (n >= 6 && n<18)
+                        if (time_now >= 6 && time_now<18)
                             iv_naver_weather.setImageResource(R.drawable.cloud_many_day);
                         else
                             iv_naver_weather.setImageResource(R.drawable.cloud_many_night);
